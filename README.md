@@ -1,1 +1,1 @@
-# Jack Heuberger's Vim Configuration
+# Vim Configuration

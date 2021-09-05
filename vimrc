@@ -21,6 +21,11 @@ Plug 'vim-python/python-syntax'
 
 Plug 'octol/vim-cpp-enhanced-highlight'
 
+Plug 'tpope/vim-surround'
+
+Plug 'tpope/vim-fugitive'
+
+Plug 'arcticicestudio/nord-vim'
 autocmd! BufNewFile,BufRead *.h set ft=cpp
 
 call plug#end()
@@ -29,8 +34,8 @@ set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set smartindent
 set autoindent
+filetype plugin indent on
 set pastetoggle=<F2>
 set backspace=indent,eol,start
 set ruler

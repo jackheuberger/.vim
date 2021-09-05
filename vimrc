@@ -25,7 +25,7 @@ Plug 'tpope/vim-surround'
 
 Plug 'tpope/vim-fugitive'
 
-Plug 'arcticicestudio/nord-vim'
+Plug 'mattn/emmet-vim'
 autocmd! BufNewFile,BufRead *.h set ft=cpp
 
 call plug#end()
@@ -35,6 +35,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
+set smartindent
 filetype plugin indent on
 set pastetoggle=<F2>
 set backspace=indent,eol,start
@@ -42,6 +43,7 @@ set ruler
 
 set hlsearch
 
+inoremap <c-b> <c-\><c-o>a</<c-x><c-o><c-r>=get(v:completed_item, 'word', '>') ==# '>' ? "\<lt>c-u>" : ''<cr>
 " for detecting italics escape code "
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"

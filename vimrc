@@ -33,7 +33,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
-set smartindent
 filetype plugin indent on
 set pastetoggle=<F2>
 set backspace=indent,eol,start

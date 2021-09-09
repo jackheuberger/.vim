@@ -41,6 +41,7 @@ set ruler
 set hlsearch
 
 inoremap <c-b> <c-\><c-o>a</<c-x><c-o><c-r>=get(v:completed_item, 'word', '>') ==# '>' ? "\<lt>c-u>" : ''<cr>
+nmap <F6> :NERDTreeToggle<CR>
 " for detecting italics escape code "
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"

@@ -1,0 +1,7 @@
+[[layers]]
+    name="colorscheme"
+[options]
+    default_indent = 4
+    colorscheme = "nord"
+    colorscheme_bg = "dark"
+
